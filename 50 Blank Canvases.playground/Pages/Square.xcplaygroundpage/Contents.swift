@@ -28,25 +28,14 @@ let canvas = Canvas(width: 400, height: 400)
 canvas.translate(byX: 75, byY: 100)
 canvas.defaultLineWidth = 5
 
-// Step 2: Draw a side and rotate
-canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
-canvas.translate(byX: 200, byY: 0)
-canvas.rotate(by: 90)
+//Use a loop to draw four sides
+for _ in 1...4 {
+    
+    canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
+    canvas.translate(byX: 200, byY: 0)
+    canvas.rotate(by: 90)
+}
 
-//Step 3: Draw a side and rotate
-canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
-canvas.translate(byX: 200, byY: 0)
-canvas.rotate(by: 90)
-
-//Step 4: Draw a side and rotate
-canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
-canvas.translate(byX: 200, byY: 0)
-canvas.rotate(by: 90)
-
-//Step 4: Draw a side and rotate
-canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
-canvas.translate(byX: 200, byY: 0)
-canvas.rotate(by: 90)
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
