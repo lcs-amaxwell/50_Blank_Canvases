@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 400, height: 400)
 
 /*:
  ## Add your code below
@@ -24,8 +24,29 @@ let canvas = Canvas(width: 400, height: 300)
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
+// Step 1: Draw a square
+canvas.translate(byX: 75, byY: 100)
+canvas.defaultLineWidth = 5
 
+// Step 2: Draw a side and rotate
+canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
+canvas.translate(byX: 200, byY: 0)
+canvas.rotate(by: 90)
 
+//Step 3: Draw a side and rotate
+canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
+canvas.translate(byX: 200, byY: 0)
+canvas.rotate(by: 90)
+
+//Step 4: Draw a side and rotate
+canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
+canvas.translate(byX: 200, byY: 0)
+canvas.rotate(by: 90)
+
+//Step 4: Draw a side and rotate
+canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
+canvas.translate(byX: 200, byY: 0)
+canvas.rotate(by: 90)
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
