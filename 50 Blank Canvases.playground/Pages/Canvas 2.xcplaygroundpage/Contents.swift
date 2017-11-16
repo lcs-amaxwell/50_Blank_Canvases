@@ -51,7 +51,7 @@ for x in stride(from: 0, to: 200, by: 1) {
     canvas.lineColor = Color(hue: 0, saturation: 80, brightness: toY, alpha: 100)
     
     // Get a regular random number
-    let toY = random(from: 0, toButNotIncluding: 100)
+    let x = random(from: 0, toButNotIncluding: 100)
     
     // Draw the line
     canvas.drawLine(fromX: x, fromY: 0, toX: x, toY: toY)
