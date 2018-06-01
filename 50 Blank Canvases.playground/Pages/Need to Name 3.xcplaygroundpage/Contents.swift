@@ -22,10 +22,25 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+// Starting Code
 
+let x1 = 300.0
+let x2 = 450.0
+let x3 = 100.0
+let y2 = 500.0
 
+//Get difference of the x's
+let dealtaX = x1 - x2
 
+// Get difference of the y's
+let deltaY = y1-y2
+
+// Get the sum of squares
+
+let sumOfSqaures = pow(dealtaX, 2) + pow(deltaY, 2)
+
+// Finally, evaluate the square root
+let result = sqrt(sumOfSqaures)
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.

@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 700, height: 400)
 
 /*:
  ## Add your code below
@@ -22,25 +22,22 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Starting Code
+// Replace this comment with your first comment – what is the goal of the code you're about to write?
 
-let x1 = 300.0
-let x2 = 450.0
-let x3 = 100.0
-let y2 = 500.0
+// Step 1: Draw a square
+canvas.translate(byX: 250, byY: 70)
+canvas.defaultLineWidth = 5
 
-//Get difference of the x's
-let dealtaX = x1 - x2
+//Use a loop to draw four sides
+for _ in 1...5 {
+    
+    canvas.drawLine(fromX: 0, fromY: 0, toX: 200, toY: 0)
+    canvas.translate(byX: 200, byY: 0)
+    canvas.rotate(by: 72)
+    
+}
 
-// Get difference of the y's
-let deltaY = y1 - y2
 
-// Get the sum of squares
-
-let sumOfSqaures = pow(deltaX, 2) + pow(deltaY, 2)
-
-// Finally, evaluate the square root
-let result = sqrt(sumOfSquares)
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.

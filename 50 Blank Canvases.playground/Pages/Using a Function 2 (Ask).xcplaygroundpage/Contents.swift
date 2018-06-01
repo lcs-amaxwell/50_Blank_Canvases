@@ -1,5 +1,5 @@
 //: [Previous](@previous) / [Next](@next)
-//: # A Blank Canvas
+//: # Using a Function
 //:
 //: Use this page to experiment. Have fun!
 /*:
@@ -25,6 +25,34 @@ let canvas = Canvas(width: 400, height: 300)
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
 
+
+func drawRegularPolygon(withSides: Int, sidelenth: Int, startX: Int, startY: Int) {
+    // Find interior angle
+    let interior = (withSides - 2) * 180 / withSides
+    
+    //Find exterior angle
+    let exterior = 180 - interior
+    
+    // Move to the starting position
+    canvas.translate(byX: startX, byY: startY)
+    
+    // Loop for however many sides we have
+        for _ in 1...withSides {
+           
+            // Draw the line
+            canvas.drawLine(fromX: 0, fromY: 0, toX: sidelenth, toY: 0)
+            
+            //Translate to end of the line (move the turtle)
+            canvas.translate(byX: sidelenth, byY: 0)
+            
+            //Rotate
+            canvas.rotate(by: Degrees(exterior))
+            
+            
+    }
+}
+
+drawRegularPolygon(withSides: 20, sidelenth: 0, startX: 0, startY: 0)
 
 /*:
  ## Use source control

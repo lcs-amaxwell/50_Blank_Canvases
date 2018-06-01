@@ -23,7 +23,19 @@ let canvas = Canvas(width: 400, height: 300)
  Use whitespace and comments as appropriate.
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
+// Example of a function
 
+func someFunction(firstParameterName : Int, secondParameterName : Int) {
+    
+    // In the function bocy (between the curly brackets firstParameterName and the secondParameterName refer to the values provided when the functions was called)
+    print(firstParameterName)
+    print("___")
+    print(secondParameterName)
+    print("===")
+}
+
+someFunction(firstParameterName: 2, secondParameterName: 4)
+someFunction(firstParameterName: 20, secondParameterName: 5)
 
 
 /*:

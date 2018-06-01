@@ -1,5 +1,5 @@
 //: [Previous](@previous) / [Next](@next)
-//: # A Blank Canvas
+//: # Data types examples
 //:
 //: Use this page to experiment. Have fun!
 /*:
@@ -24,7 +24,10 @@ let canvas = Canvas(width: 400, height: 300)
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
+var a : Int = 3
+var b : Double = 4.5
 
+a = Int(89.5893)
 
 /*:
  ## Use source control

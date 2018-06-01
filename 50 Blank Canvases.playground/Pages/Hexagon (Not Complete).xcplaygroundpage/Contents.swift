@@ -25,6 +25,17 @@ let canvas = Canvas(width: 400, height: 300)
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
 
+//Move starting point
+canvas.translate(byX: 100, byY: 100)
+
+// Draw Hexagon
+for _ in 1...6 {
+    
+    canvas.drawLine(fromX: 0, fromY: 0, toX: 20, toY: 0)
+    canvas.translate(byX: 20, byY: 0)
+    canvas.rotate(by: 60)
+}
+
 
 /*:
  ## Use source control
